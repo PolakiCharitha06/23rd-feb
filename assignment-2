@@ -1,0 +1,12 @@
+list1=[ ]
+n=int(input('enter n:'))
+for i in range(n):
+     x=int(input())
+     list1.append(x)  
+print('Original list:', list1)
+list2=[ ]
+y=len(list1)
+while y > 0:
+    list2.append(list1[y-1])
+    y-=1
+print('Reversed list:', list2)
